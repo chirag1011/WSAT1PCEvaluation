@@ -1,0 +1,57 @@
+http://localhost:8080/BalanceInquiry/BalanceInquiryATImpl?wsdl
+
+
+wsimport -p C:\Chirag\Thesis\ThesisExperiment\BalanceInquiry\src\com\unf\edu\wsat\balanceinquiry\jaxws\BalanceInquiryAT http://localhost:8080/BalanceInquiry/BalanceInquiryATImpl?wsdl
+
+
+wsimport -keep -verbose http://localhost:8080/BalanceInquiry/BalanceInquiryATImpl?wsdl
+
+
+wsimport -p BalanceInquiryAT http://localhost:8080/BalanceInquiry/BalanceInquiryATImpl?wsdl
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project>
+<project name="generate-client" default="main" basedir=".">
+    <property name="java.home" 
+        value="X:\Software\jdk1.7.0_11" />
+    <property name="wsdl.location" 
+        value="http://localhost/wsdl" />
+    <target name="main">
+        <exec executable="${java.home}\bin\wsimport.exe">
+            <arg line="${wsdl.location} -s src -Xdebug -verbose -Xnocompile" />
+        </exec>
+    </target>
+</project>
+
+
+3 New Projects Created
+
+Existing Class modified:
+ParticipantEngine
+CoordinatorEngine
+TransactionManager
+TransactionManagerImple
+RegistrarImple
+AtomicTransactionConstants
+
+
+
+New Classes Created:
+OnePhaseCommitParticipant
+_1PCParticipant
+_1PCStub
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+build clean install -DskipTests
+
+
+
+
+1. Fork Narayana from here: https://github.com/jbosstm/narayana
+2. Clone your fork to you computer
+3. Build Narayana with "build.sh clean install -DskipTests". This will give you a snapshot build of Narayana, containing your changes if you made them.
+4. Clone our fork of WildFly from https://github.com/jbosstm/jboss-as. This fork tracks WildFly master, but is modified to take in the snapshot build of Narayana from step 3.
+5. Build Wildfly with:  "build.sh clean install -DskipTests"
+6. Look in ./build/target/wildfly-* for the newly built WildFly distribution.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+18:02:59,496 INFO  [stdout] (default task-2) RestaurantServiceATService.enclosing_method()-----BASE URL------vfs:/C:/wildfly-8.0.0.CR1/standalone/deployments/ZZTestProject_WSAT_noJar.war/WEB-INF/classes/org/jboss/as/quickstarts/wsat/simple/jaxws/
+
+18:02:59,498 INFO  [stdout] (default task-2) RestaurantServiceATService.enclosing_method()---URL---:vfs:/C:/wildfly-8.0.0.CR1/standalone/deployments/ZZTestProject_WSAT_noJar.war/WEB-INF/classes/org/jboss/as/quickstarts/wsat/simple/jaxws/RestaurantServiceAT.wsdl
+
+18:02:59,986 INFO  [org.apache.cxf.service.factory.ReflectionServiceFactoryBean] (default task-2) Creating Service {http://www.jboss.org/jboss-jdf/jboss-as-quickstart/wsat/simple/Restaurant}RestaurantServiceATService from WSDL: http://localhost:8080/ZZTestProject_WSAT_noJar/RestaurantServiceAT?wsdl
+18:03:00,095 INFO  [stdout] (default task-2) WSATSimpleServletClient.doGet()------------------Step 1
+
+18:03:00,095 INFO  [stdout] (default task-2) WSATSimpleServletClient.doGet()--------bindingProvider-------org.apache.cxf.jaxws.JaxWsClientProxy@3254cc84
+
+18:03:00,110 INFO  [stdout] (default task-2) [CLIENT] Creating a new WS-AT User Transaction
+
+18:03:00,110 INFO  [stdout] (default task-2) WSATSimpleServletClient.doGet()-------ut object-------Unknown
+
+18:03:00,110 INFO  [stdout] (default task-2) [CLIENT] Beginning Atomic Transaction (All calls to Web services that support WS-AT wil be included in this transaction)
+
+18:03:00,110 INFO  [stdout] (default task-2) UserTransactionImple.begin()--------Transaction Begin in -----com.arjuna.mwlabs.wst11.at.remote------------
+
+18:03:00,266 INFO  [org.apache.cxf.service.factory.ReflectionServiceFactoryBean] (default task-2) Creating Service {http://docs.oasis-open.org/ws-tx/wscoor/2006/06}ActivationService from WSDL: jar:file:/C:/wildfly-8.0.0.CR1/modules/system/layers/base/org/jboss/xts/main/jbossxts-6.0.0.Alpha1-SNAPSHOT.jar!/org/oasis_open/docs/ws_tx/wscoor/_2006/_06/wsdl/wscoor-activation-binding.wsdl
+18:03:00,376 INFO  [org.apache.cxf.service.factory.ReflectionServiceFactoryBean] (default task-2) Creating Service {http://docs.oasis-open.org/ws-tx/wscoor/2006/06}ActivationService from WSDL: jar:file:/C:/wildfly-8.0.0.CR1/modules/system/layers/base/org/jboss/xts/main/jbossxts-6.0.0.Alpha1-SNAPSHOT.jar!/org/oasis_open/docs/ws_tx/wscoor/_2006/_06/wsdl/wscoor-activation-binding.wsdl
+18:03:01,202 INFO  [org.apache.cxf.service.factory.ReflectionServiceFactoryBean] (default task-2) Creating Service {http://docs.oasis-open.org/ws-tx/wscoor/2006/06}RegistrationService from WSDL: jar:file:/C:/wildfly-8.0.0.CR1/modules/system/layers/base/org/jboss/xts/main/jbossxts-6.0.0.Alpha1-SNAPSHOT.jar!/org/oasis_open/docs/ws_tx/wscoor/_2006/_06/wsdl/wscoor-registration-binding.wsdl
+18:03:01,338 INFO  [stdout] (default task-2) [CLIENT] invoking makeBooking() on WS
+
+18:03:01,479 INFO  [stdout] (default task-6) [SERVICE] Restaurant service invoked to make a booking
+
+18:03:01,479 INFO  [stdout] (default task-6) [SERVICE] Enlisting a Durable2PC participant into the AT
+
+18:03:01,479 INFO  [stdout] (default task-6) RestaurantServiceATImpl.makeBooking()
+
+18:03:01,603 INFO  [org.apache.cxf.service.factory.ReflectionServiceFactoryBean] (default task-6) Creating Service {http://docs.oasis-open.org/ws-tx/wscoor/2006/06}RegistrationService from WSDL: jar:file:/C:/wildfly-8.0.0.CR1/modules/system/layers/base/org/jboss/xts/main/jbossxts-6.0.0.Alpha1-SNAPSHOT.jar!/org/oasis_open/docs/ws_tx/wscoor/_2006/_06/wsdl/wscoor-registration-binding.wsdl
+18:03:01,728 INFO  [stdout] (default task-6) [SERVICE] Invoking the back-end business logic
+
+18:03:01,728 INFO  [stdout] (default task-6) [SERVICE] makeBooking called on backend resource.
+
+18:03:01,728 INFO  [stdout] (default task-2) [CLIENT] committing Atomic Transaction (This will cause the AT to complete successfully)
+
+18:03:01,822 INFO  [org.apache.cxf.service.factory.ReflectionServiceFactoryBean] (default task-2) Creating Service {http://docs.oasis-open.org/ws-tx/wsat/2006/06}CompletionCoordinatorService from WSDL: jar:file:/C:/wildfly-8.0.0.CR1/modules/system/layers/base/org/jboss/xts/main/jbossxts-6.0.0.Alpha1-SNAPSHOT.jar!/org/oasis_open/docs/ws_tx/wsat/_2006/_06/wsdl/wsat-completion-coordinator-binding.wsdl
+18:03:02,165 INFO  [org.apache.cxf.service.factory.ReflectionServiceFactoryBean] (TaskWorker-1) Creating Service {http://docs.oasis-open.org/ws-tx/wsat/2006/06}ParticipantService from WSDL: jar:file:/C:/wildfly-8.0.0.CR1/modules/system/layers/base/org/jboss/xts/main/jbossxts-6.0.0.Alpha1-SNAPSHOT.jar!/org/oasis_open/docs/ws_tx/wsat/_2006/_06/wsdl/wsat-participant-binding.wsdl
+18:03:02,321 INFO  [stdout] (TaskWorker-2) [SERVICE] Prepare called on participant, about to prepare the back-end resource
+
+18:03:02,321 INFO  [stdout] (TaskWorker-2) [SERVICE] prepare called on backend resource.
+
+18:03:02,321 INFO  [stdout] (TaskWorker-2) [SERVICE] back-end resource prepared, participant votes prepared
+
+18:03:02,353 WARN  [com.arjuna.wst] (TaskWorker-2) ARJUNA043219: Could not save recovery state for non-serializable durable WS-AT participant restaurantServiceAT:5e6f0248-f9f4-4e22-9e9f-cbbb4ebbb44e
+18:03:02,462 INFO  [org.apache.cxf.service.factory.ReflectionServiceFactoryBean] (TaskWorker-2) Creating Service {http://docs.oasis-open.org/ws-tx/wsat/2006/06}CoordinatorService from WSDL: jar:file:/C:/wildfly-8.0.0.CR1/modules/system/layers/base/org/jboss/xts/main/jbossxts-6.0.0.Alpha1-SNAPSHOT.jar!/org/oasis_open/docs/ws_tx/wsat/_2006/_06/wsdl/wsat-coordinator-binding.wsdl
+18:03:02,572 INFO  [org.apache.cxf.service.factory.ReflectionServiceFactoryBean] (TaskWorker-1) Creating Service {http://docs.oasis-open.org/ws-tx/wsat/2006/06}ParticipantService from WSDL: jar:file:/C:/wildfly-8.0.0.CR1/modules/system/layers/base/org/jboss/xts/main/jbossxts-6.0.0.Alpha1-SNAPSHOT.jar!/org/oasis_open/docs/ws_tx/wsat/_2006/_06/wsdl/wsat-participant-binding.wsdl
+18:03:02,603 INFO  [stdout] (TaskWorker-2) [SERVICE] all participants voted 'prepared', so coordinator tells the participant to commit
+
+18:03:02,603 INFO  [stdout] (TaskWorker-2) [SERVICE] commit called on backend resource.
+
+18:03:02,650 INFO  [org.apache.cxf.service.factory.ReflectionServiceFactoryBean] (TaskWorker-2) Creating Service {http://docs.oasis-open.org/ws-tx/wsat/2006/06}CoordinatorService from WSDL: jar:file:/C:/wildfly-8.0.0.CR1/modules/system/layers/base/org/jboss/xts/main/jbossxts-6.0.0.Alpha1-SNAPSHOT.jar!/org/oasis_open/docs/ws_tx/wsat/_2006/_06/wsdl/wsat-coordinator-binding.wsdl
+18:03:02,759 INFO  [org.apache.cxf.service.factory.ReflectionServiceFactoryBean] (TaskWorker-1) Creating Service {http://docs.oasis-open.org/ws-tx/wsat/2006/06}CompletionInitiatorService from WSDL: jar:file:/C:/wildfly-8.0.0.CR1/modules/system/layers/base/org/jboss/xts/main/jbossxts-6.0.0.Alpha1-SNAPSHOT.jar!/org/oasis_open/docs/ws_tx/wsat/_2006/_06/wsdl/wsat-completion-initiator-binding.wsdl
+18:03:02,837 INFO  [stdout] (default task-2) WSATSimpleServletClient.doGet()--------EXECUTION TIME---------:2727
+

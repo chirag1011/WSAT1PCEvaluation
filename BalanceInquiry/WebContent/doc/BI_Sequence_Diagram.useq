@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.5" icons="true" automaticImage="JPEG">  
+  <object id="1" language="java" name="com.unf.edu.wsat.balanceinquiry.servlet.BalanceInquiryServlet" 
+    project="BalanceInquiry" 
+    file="/BalanceInquiry/src/com/unf/edu/wsat/balanceinquiry/servlet/BalanceInquiryServlet.java" binary="false" 
+    label="balanceInquiryServlet" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="55" y="0"/>    
+    <execution id="2">      
+      <position height="63" width="176" x="5" y="149"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="63" width="176" x="5" y="78"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="63" width="176" x="5" y="1082"/>    
+    </execution>  
+  </object>  
+  <object id="11" language="java" name="com.unf.edu.wsat.balanceinquiry.BalanceInquiryATImpl" project="BalanceInquiry" 
+    file="/BalanceInquiry/src/com/unf/edu/wsat/balanceinquiry/BalanceInquiryATImpl.java" binary="false" 
+    label="balanceInquiryATImpl" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="372" y="0"/>    
+    <execution id="4">      
+      <position height="21" width="145" x="185" y="170"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="63" width="145" x="185" y="202"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="63" width="145" x="185" y="787"/>    
+    </execution>  
+  </object>  
+  <object id="18" language="java" name="com.unf.edu.wsat.balanceinquiry.BalanceInquiryParticipant" 
+    project="BalanceInquiry" file="/BalanceInquiry/src/com/unf/edu/wsat/balanceinquiry/BalanceInquiryParticipant.java" 
+    binary="false" label="balanceInquiryParticipant" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="489" y="0"/>    
+    <execution id="19">      
+      <position height="21" width="169" x="334" y="766"/>    
+    </execution>    
+    <execution id="20">      
+      <position height="63" width="169" x="334" y="836"/>    
+    </execution>    
+    <execution id="23">      
+      <position height="21" width="169" x="334" y="986"/>    
+    </execution>    
+    <execution id="24">      
+      <position height="63" width="169" x="334" y="1029"/>    
+    </execution>  
+  </object>  
+  <object id="27" language="java" name="com.unf.edu.wsat.balanceinquiry.MockBalanceInquiryManager" 
+    project="BalanceInquiry" file="/BalanceInquiry/src/com/unf/edu/wsat/balanceinquiry/MockBalanceInquiryManager.java" 
+    binary="false" label="mockBalanceInquiryManager" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="388" y="0"/>    
+    <execution id="22">      
+      <position height="21" width="188" x="507" y="857"/>    
+    </execution>    
+    <execution id="17">      
+      <position height="21" width="188" x="507" y="808"/>    
+    </execution>    
+    <execution id="26">      
+      <position height="21" width="188" x="507" y="1050"/>    
+    </execution>  
+  </object>  
+  <object id="28" language="java" name="com.arjuna.mwlabs.wst11.at.remote.UserTransactionImple" project="wstx11" 
+    file="/wstx11/classes/com/arjuna/mwlabs/wst11/at/remote/UserTransactionImple.java" binary="false" 
+    label="userTransactionImple" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="767" y="0"/>    
+    <execution id="7">      
+      <position height="21" width="156" x="699" y="99"/>    
+    </execution>    
+    <execution id="29">      
+      <position height="63" width="156" x="699" y="248"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="21" width="156" x="699" y="1103"/>    
+    </execution>  
+  </object>  
+  <object id="32" language="java" name="com.arjuna.mwlabs.wst11.at.remote.TransactionManagerImple" project="wstx11" 
+    file="/wstx11/classes/com/arjuna/mwlabs/wst11/at/remote/TransactionManagerImple.java" binary="false" 
+    label="transactionManagerImple" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="712" y="0"/>    
+    <execution id="14">      
+      <position height="21" width="171" x="974" y="223"/>    
+    </execution>    
+    <execution id="31">      
+      <position height="21" width="171" x="859" y="269"/>    
+    </execution>    
+    <execution id="33">      
+      <position height="63" width="171" x="859" y="300"/>    
+    </execution>    
+    <execution id="36">      
+      <position height="63" width="171" x="859" y="472"/>    
+    </execution>  
+  </object>  
+  <object id="39" language="java" name="com.arjuna.webservices11.wsat.processors.ParticipantProcessor" project="ws-t11" 
+    file="/ws-t11/dev/src/com/arjuna/webservices11/wsat/processors/ParticipantProcessor.java" binary="false" 
+    label="participantProcessor" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="1035" y="0"/>    
+    <execution id="35">      
+      <position height="21" width="188" x="1034" y="321"/>    
+    </execution>    
+    <execution id="40">      
+      <position height="63" width="188" x="1034" y="349"/>    
+    </execution>  
+  </object>  
+  <object id="43" language="java" name="com.arjuna.wst11.stub.ParticipantStub" project="ws-t11" 
+    file="/ws-t11/dev/src/com/arjuna/wst11/stub/ParticipantStub.java" binary="false" label="participantStub" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="858" y="0"/>    
+    <execution id="42">      
+      <position height="21" width="111" x="1226" y="370"/>    
+    </execution>    
+    <execution id="44">      
+      <position height="63" width="111" x="1226" y="402"/>    
+    </execution>    
+    <execution id="47">      
+      <position height="21" width="111" x="1226" y="931"/>    
+    </execution>    
+    <execution id="48">      
+      <position height="63" width="111" x="1226" y="522"/>    
+    </execution>    
+    <execution id="51">      
+      <position height="63" width="111" x="1226" y="965"/>    
+    </execution>  
+  </object>  
+  <object id="53" language="java" name="com.arjuna.wst11.messaging.engines.CoordinatorEngine" project="ws-t11" 
+    file="/ws-t11/dev/src/com/arjuna/wst11/messaging/engines/CoordinatorEngine.java" binary="false" 
+    label="coordinatorEngine" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="732" y="0"/>    
+    <execution id="46">      
+      <position height="21" width="162" x="1341" y="423"/>    
+    </execution>    
+    <execution id="54">      
+      <position height="21" width="162" x="1341" y="671"/>    
+    </execution>    
+    <execution id="55">      
+      <position height="63" width="162" x="1341" y="813"/>    
+    </execution>  
+  </object>  
+  <object id="58" language="java" name="com.arjuna.wst11.messaging.engines.ParticipantEngine" project="ws-t11" 
+    file="/ws-t11/dev/src/com/arjuna/wst11/messaging/engines/ParticipantEngine.java" binary="false" 
+    label="participantEngine" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="829" y="0"/>    
+    <execution id="38">      
+      <position height="21" width="162" x="1507" y="493"/>    
+    </execution>    
+    <execution id="59">      
+      <position height="21" width="162" x="1507" y="597"/>    
+    </execution>    
+    <execution id="57">      
+      <position height="21" width="162" x="1507" y="834"/>    
+    </execution>    
+    <execution id="60">      
+      <position height="63" width="162" x="1507" y="910"/>    
+    </execution>  
+  </object>  
+  <object id="62" language="java" name="com.arjuna.mwlabs.wst.at.participants.DurableTwoPhaseCommitParticipant" 
+    project="wstx11" file="/wstx11/classes/com/arjuna/mwlabs/wst/at/participants/DurableTwoPhaseCommitParticipant.java" 
+    binary="false" label="durableTwoPhaseCommitParticipant" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="727" y="0"/>    
+    <execution id="63">      
+      <position height="63" width="232" x="1673" y="650"/>    
+    </execution>    
+    <execution id="65">      
+      <position height="63" width="232" x="1673" y="576"/>    
+    </execution>    
+    <execution id="67">      
+      <position height="63" width="232" x="1673" y="745"/>    
+    </execution>    
+    <execution id="50">      
+      <position height="21" width="232" x="1673" y="543"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="getBalance(java.lang.String):long">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" operation="begin():void">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="9" operation="commit():void">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="13" operation="enlistForDurableTwoPhase(com.arjuna.wst.Durable2PCParticipant,java.lang.String):void">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="16" operation="getBalance(java.lang.Object):long">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="21" operation="prepare(java.lang.Object):boolean">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>  
+  <message id="25" operation="commit(java.lang.Object):void">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="26"/>  
+  </message>  
+  <message id="30" 
+    operation="registerParticipant(javax.xml.ws.wsaddressing.W3CEndpointReference,java.lang.String):javax.xml.ws.wsaddressing.W3CEndpointReference">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="31"/>  
+  </message>  
+  <message id="34" 
+    operation="activateParticipant(com.arjuna.webservices11.wsat.ParticipantInboundEvents,java.lang.String):void">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="35"/>  
+  </message>  
+  <message id="37" 
+    operation="ParticipantEngine(com.arjuna.wst.Participant,java.lang.String,javax.xml.ws.wsaddressing.W3CEndpointReference,com.arjuna.webservices11.wsat.State)">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="38"/>  
+  </message>  
+  <message id="41" 
+    operation="ParticipantStub(java.lang.String,boolean,javax.xml.ws.wsaddressing.W3CEndpointReference,java.lang.String)">    
+    <end type="SOURCE" refId="40"/>    
+    <end type="TARGET" refId="42"/>  
+  </message>  
+  <message id="45" 
+    operation="CoordinatorEngine(java.lang.String,boolean,javax.xml.ws.wsaddressing.W3CEndpointReference,com.arjuna.webservices11.wsat.State)">    
+    <end type="SOURCE" refId="44"/>    
+    <end type="TARGET" refId="46"/>  
+  </message>  
+  <message id="49" operation="prepare():com.arjuna.mw.wscf.model.twophase.vote.Vote">    
+    <end type="SOURCE" refId="48"/>    
+    <end type="TARGET" refId="50"/>  
+  </message>  
+  <message id="52" operation="commit():void">    
+    <end type="SOURCE" refId="51"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="56" 
+    operation="commit(org.oasis_open.docs.ws_tx.wsat._2006._06.Notification,org.jboss.ws.api.addressing.MAP,com.arjuna.webservices11.wsarj.ArjunaContext):void">    
+    <end type="SOURCE" refId="55"/>    
+    <end type="TARGET" refId="57"/>  
+  </message>  
+  <message id="61" operation="commit():void">    
+    <end type="SOURCE" refId="60"/>    
+    <end type="TARGET" refId="47"/>  
+  </message>  
+  <message id="64" 
+    operation="prepared(org.oasis_open.docs.ws_tx.wsat._2006._06.Notification,org.jboss.ws.api.addressing.MAP,com.arjuna.webservices11.wsarj.ArjunaContext):void" 
+    x="1553" y="677">    
+    <end type="SOURCE" refId="63"/>    
+    <end type="TARGET" refId="54"/>  
+  </message>  
+  <message id="66" operation="executePrepare():void">    
+    <end type="SOURCE" refId="65"/>    
+    <end type="TARGET" refId="59"/>  
+  </message>  
+  <message id="68" operation="prepare():com.arjuna.wst.Vote">    
+    <end type="SOURCE" refId="67"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>
+</sequence-diagram>

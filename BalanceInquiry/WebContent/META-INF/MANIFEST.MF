@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Class-Path: 
+Dependencies: org.jboss.xts,org.jboss.modules,org.jboss.msc,org.jboss.jts

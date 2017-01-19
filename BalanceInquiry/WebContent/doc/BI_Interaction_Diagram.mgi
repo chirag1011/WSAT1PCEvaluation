@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <CommunicationClass
+        name="com.arjuna.mwlabs.wst.at.participants.DurableTwoPhaseCommitParticipant"
+        x="867" y="486">
+        <Association
+            destinationClassName="com.arjuna.wst.Durable2PCParticipant"
+            endpointName="_resource" kind="Simple"/>
+        <Communication destinationClassName="com.arjuna.wst.Participant"/>
+    </CommunicationClass>
+    <CommunicationClass
+        name="com.arjuna.webservices11.wsat.processors.ParticipantProcessor"
+        x="679" y="277"/>
+    <CommunicationClass
+        name="com.unf.edu.wsat.balanceinquiry.MockBalanceInquiryManager"
+        x="1115" y="190"/>
+    <CommunicationClass name="com.arjuna.wst11.stub.CompletionStub"
+        x="469" y="142"/>
+    <CommunicationClass
+        name="com.unf.edu.wsat.balanceinquiry.BalanceInquiryATImpl"
+        x="1131" y="345">
+        <Extension destinationClassName="com.unf.edu.wsat.balanceinquiry.BalanceInquiryAT"/>
+        <Association
+            destinationClassName="com.unf.edu.wsat.balanceinquiry.MockBalanceInquiryManager"
+            endpointName="balanceInquiryManager" kind="Simple"/>
+        <Communication destinationClassName="com.unf.edu.wsat.balanceinquiry.MockBalanceInquiryManager"/>
+    </CommunicationClass>
+    <CommunicationClass
+        name="com.arjuna.mwlabs.wst11.at.remote.TransactionManagerImple"
+        x="663" y="185">
+        <Communication destinationClassName="com.arjuna.webservices11.wsat.processors.ParticipantProcessor"/>
+    </CommunicationClass>
+    <CommunicationClass
+        name="com.arjuna.webservices11.wsat.processors.CoordinatorProcessor"
+        x="204" y="337"/>
+    <CommunicationClass
+        name="com.arjuna.webservices11.wsat.client.CoordinatorClient"
+        x="901" y="28"/>
+    <CommunicationClass
+        name="com.unf.edu.wsat.balanceinquiry.BalanceInquiryAT" x="438" y="26"/>
+    <CommunicationClass
+        name="com.arjuna.wst11.messaging.engines.ParticipantEngine"
+        x="961" y="189">
+        <Association destinationClassName="com.arjuna.wst.Participant"
+            endpointName="participant" kind="Simple"/>
+        <Communication destinationClassName="com.arjuna.webservices11.wsat.processors.ParticipantProcessor">
+            <Point x="855" y="297"/>
+        </Communication>
+        <Communication destinationClassName="com.arjuna.wst.Participant"/>
+        <Communication destinationClassName="com.arjuna.webservices11.wsat.client.CoordinatorClient"/>
+    </CommunicationClass>
+    <CommunicationClass
+        name="com.unf.edu.wsat.balanceinquiry.servlet.BalanceInquiryServlet"
+        x="210" y="28">
+        <Association
+            destinationClassName="com.unf.edu.wsat.balanceinquiry.BalanceInquiryAT"
+            endpointName="client" kind="Simple"/>
+        <Communication destinationClassName="com.unf.edu.wsat.balanceinquiry.BalanceInquiryAT"/>
+        <Communication destinationClassName="com.arjuna.mw.wst11.UserTransaction"/>
+    </CommunicationClass>
+    <CommunicationClass name="com.arjuna.wst.Durable2PCParticipant"
+        x="733" y="393">
+        <Extension destinationClassName="com.arjuna.wst.Participant"/>
+    </CommunicationClass>
+    <CommunicationClass name="com.arjuna.mwlabs.wst11.at.RegistrarImple"
+        x="478" y="306"/>
+    <CommunicationClass
+        name="com.arjuna.wst11.messaging.engines.CoordinatorEngine"
+        x="14" y="276">
+        <Communication destinationClassName="com.arjuna.webservices11.wsat.processors.CoordinatorProcessor"/>
+        <Communication destinationClassName="com.arjuna.webservices11.wsat.client.ParticipantClient"/>
+    </CommunicationClass>
+    <CommunicationClass name="com.arjuna.mw.wst11.UserTransaction"
+        x="224" y="164"/>
+    <CommunicationClass
+        name="com.arjuna.webservices11.wsat.client.ParticipantClient"
+        x="22" y="45"/>
+    <CommunicationClass name="com.arjuna.wst11.stub.ParticipantStub"
+        x="23" y="454">
+        <Extension destinationClassName="com.arjuna.wst.Participant"/>
+        <Association
+            destinationClassName="com.arjuna.wst11.messaging.engines.CoordinatorEngine"
+            endpointName="coordinator" kind="Simple"/>
+        <Communication destinationClassName="com.arjuna.webservices11.wsat.processors.CoordinatorProcessor"/>
+        <Communication destinationClassName="com.arjuna.wst11.messaging.engines.CoordinatorEngine"/>
+    </CommunicationClass>
+    <CommunicationClass name="com.arjuna.wst.Participant" x="953" y="336"/>
+    <CommunicationClass name="com.arjuna.wst11.stub.Durable2PCStub"
+        x="474" y="409">
+        <Extension destinationClassName="com.arjuna.wst11.stub.ParticipantStub"/>
+        <Extension destinationClassName="com.arjuna.wst.Durable2PCParticipant"/>
+    </CommunicationClass>
+    <CommunicationClass
+        name="com.arjuna.mwlabs.wst11.at.remote.UserTransactionImple"
+        x="675" y="49">
+        <Extension destinationClassName="com.arjuna.mw.wst11.UserTransaction"/>
+        <Communication destinationClassName="com.arjuna.wst11.stub.CompletionStub"/>
+        <Communication destinationClassName="com.arjuna.mwlabs.wst11.at.remote.TransactionManagerImple"/>
+    </CommunicationClass>
+    <CommunicationClass
+        name="com.unf.edu.wsat.balanceinquiry.BalanceInquiryParticipant"
+        x="1106" y="2">
+        <Extension destinationClassName="com.arjuna.wst.Durable2PCParticipant"/>
+        <Association
+            destinationClassName="com.unf.edu.wsat.balanceinquiry.MockBalanceInquiryManager"
+            endpointName="mockBalanceInquiryManager" kind="Simple"/>
+        <Communication destinationClassName="com.unf.edu.wsat.balanceinquiry.MockBalanceInquiryManager"/>
+    </CommunicationClass>
+</ClassDiagram>
